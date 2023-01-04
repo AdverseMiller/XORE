@@ -27,7 +27,7 @@ void encrypt(int value, string file, string output, int lastChar) {
     }
     fin.close();
     fout.close();
-    cout << "Writing output to " << output << endl;
+    cout << "Encrypted " << file << endl;
     
 }
 
@@ -55,13 +55,16 @@ void decrypt(int value, string file, string output, int lastChar) {
     fin.close();
     fout.close();
     
-    cout << "Writing output to " << output << endl;
+    
+    cout << "Decrypted " << file << endl;
     
 }
 
-
-
-
+bool FileExists(const string &s)
+{
+  struct stat buffer;
+  return (stat (s.c_str(), &buffer) == 0);
+}
 
 
 
