@@ -46,8 +46,8 @@ int main(int argc, char* argv[])
         "   {-o} <output>\n"<<
         "   {-v} verbosity\n\n"<<
         "ADDITIONAL INFO\n"<<
-        "The output flag (-o) will create a file when using a single file and\n"<<
-        "will create a directory when using a directory.\n"
+        "The output flag (-o) will create a file if it does not already exist, however,\n"<<
+        "if a directory is the input, the given output must already exist.\n";
         ;
         return 0;
     }
